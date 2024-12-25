@@ -1,0 +1,30 @@
+.text-center {
+    text-align: center;
+    font-weight: 750;
+}
+
+.bg {
+    background-color: #3c3c3f;
+    width: 260px;
+    border-radius: 8px;
+}
+
+.max-auto {
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.first-row {
+    padding-right: 3px;
+}

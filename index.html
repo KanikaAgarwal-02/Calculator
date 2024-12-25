@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="utils.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1 class="text-center">Welcome to Calculate me!</h1>
+    <div class="container flex flex-col bg items-center max-auto">
+        <div class="row">
+            <input class="input" placeholder="0" id="display" type="text">  <!-- readonly -->
+        </div>
+        <div class="row">
+            <button class="button" onclick="autoClear()">AC</button>
+            <button class="button" onclick="getOperator('(')">(</button>
+            <button class="button" onclick="getOperator(')')">)</button>
+            <button class="button" onclick="getOperator('/')">/</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="getValue('7')">7</button>
+            <button class="button" onclick="getValue('8')">8</button>
+            <button class="button" onclick="getValue('9')">9</button>
+            <button class="button" onclick="getOperator('*')">*</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="getValue('4')">4</button>
+            <button class="button" onclick="getValue('5')">5</button>
+            <button class="button" onclick="getValue('6')">6</button>
+            <button class="button" onclick="getOperator('-')">-</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="getValue('1')">1</button>
+            <button class="button" onclick="getValue('2')">2</button>
+            <button class="button" onclick="getValue('3')">3</button>
+            <button class="button" onclick="getOperator('+')">+</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="getOperator('%')">%</button>
+            <button class="button" onclick="getValue('0')">0</button>
+            <button class="button" onclick="getValue('.')">.</button>
+            <button class="button" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
